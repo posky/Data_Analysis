@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body bgcolor="#d4a3ae">
+    <h1>Mobile Price Range Predict</h1>
+    <br />
+    <form method="POST" , action="{{url_for('start')}}">
+      <b><span> Battery power (501.0 ~ 1998.0) : </span></b>
+      <input
+        type="text"
+        name="battery_power"
+        ,
+        placeholder="enter battery power"
+      /><br /><br />
+      <b><span> Bluetooth (0: no, 1: yes) : </span></b>
+      <input
+        type="text"
+        name="blue"
+        ,
+        placeholder="enter bluetooth"
+      /><br /><br />
+      <b><span> Clock speed (0.5 ~ 3.0) : </span></b>
+      <input
+        type="text"
+        name="clock_speed"
+        ,
+        placeholder="enter clock speed"
+      /><br /><br />
+      <b><span> Dual sim (0: no, 1: yes) : </span></b>
+      <input
+        type="text"
+        name="daul_sim"
+        ,
+        placeholder="enter dual sim"
+      /><br /><br />
+      <b><span> Front camera mega pixels (0 ~ 19) : </span></b>
+      <input
+        type="text"
+        name="fc"
+        ,
+        placeholder="enter front camera mega pixels"
+      /><br /><br />
+      <b><span> 4G (LTE) (0: no, 1: yes) : </span></b>
+      <input type="text" name="four_g" , placeholder="enter 4G" /><br /><br />
+      <b><span> Internal Memory in Gigabytes (2 ~ 64) : </span></b>
+      <input
+        type="text"
+        name="int_memory"
+        ,
+        placeholder="enter internal memory"
+      /><br /><br />
+      <b><span> Mobile Depth in cm (0.1 ~ 1.0) : </span></b>
+      <input
+        type="text"
+        name="m_dep"
+        ,
+        placeholder="enter mobile depth"
+      /><br /><br />
+      <b><span> Weight of mobile phone (80 ~ 200) : </span></b>
+      <input
+        type="text"
+        name="mobile_wt"
+        ,
+        placeholder="enter weight of mobile phone"
+      /><br /><br />
+      <b><span> Number of cores of processor (1 ~ 8) : </span></b>
+      <input
+        type="text"
+        name="n_cores"
+        ,
+        placeholder="enter number of cores of processor"
+      /><br /><br />
+      <b><span> Primary Camera mega pixels (0 ~ 20) : </span></b>
+      <input
+        type="text"
+        name="pc"
+        ,
+        placeholder="enter primary camera mega pixels"
+      /><br /><br />
+      <b><span> Pixel Resolution Height (0 ~ 1960) : </span></b>
+      <input
+        type="text"
+        name="px_height"
+        ,
+        placeholder="enter pixel resolution height"
+      /><br /><br />
+      <b><span> Pixel Resolution Width (500 ~ 1998) : </span></b>
+      <input
+        type="text"
+        name="px_width"
+        ,
+        placeholder="enter pixel resolution width"
+      /><br /><br />
+      <b><span> Random Access Memory in Megabytes (256 ~ 3998) : </span></b>
+      <input type="text" name="ram" , placeholder="enter ram" /><br /><br />
+      <b><span> Screen Height of mobile in cm (5 ~ 19) : </span></b>
+      <input
+        type="text"
+        name="sc_h"
+        ,
+        placeholder="enter screen height"
+      /><br /><br />
+      <b><span> Screen Width of mobile in cm (0 ~ 18) : </span></b>
+      <input
+        type="text"
+        name="sc_w"
+        ,
+        placeholder="enter screen width"
+      /><br /><br />
+      <b
+        ><span>
+          longest time that a single battery charge will last when you are (2 ~
+          20) :
+        </span></b
+      >
+      <input
+        type="text"
+        name="talk_time"
+        ,
+        placeholder="enter talk time"
+      /><br /><br />
+      <b><span> 3G (0: no, 1: yes) : </span></b>
+      <input type="text" name="three_g" , placeholder="enter 3G" /><br /><br />
+      <b><span> touch screen (0: no, 1: yes) : </span></b>
+      <input
+        type="text"
+        name="touch_screen"
+        ,
+        placeholder="enter touch screen"
+      /><br /><br />
+      <b><span> wifi (0: no, 1: yes) : </span></b>
+      <input type="text" name="wifi" , placeholder="enter wifi" /><br /><br />
+      <input type="submit" value="predict!" />
+    </form>
+    <br />
+  </body>
+</html>
