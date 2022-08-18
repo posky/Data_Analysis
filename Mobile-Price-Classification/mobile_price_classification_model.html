@@ -14579,7 +14579,10 @@ weighted avg       0.93      0.93      0.93       500
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <ul>
-<li>KNN</li>
+<li>KNN<ul>
+<li>MinMaxScaler로 데이터 전처리</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -14651,7 +14654,31 @@ weighted avg       0.43      0.41      0.41       500
 </div>
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h5 id="GridSearch">GridSearch<a class="anchor-link" href="#GridSearch">&#182;</a></h5>
+<ul>
+<li>점수가 가장 높은 Logistic Regression 모델을 선택.</li>
+</ul>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h5 id="GridSearchCV">GridSearchCV<a class="anchor-link" href="#GridSearchCV">&#182;</a></h5><ul>
+<li>solver<ul>
+<li>lbfgs</li>
+<li>sag</li>
+</ul>
+</li>
+<li>C<ul>
+<li>0.01, 0.1, 1, 10, 100</li>
+</ul>
+</li>
+<li>penalty<ul>
+<li>l2</li>
+<li>none</li>
+</ul>
+</li>
+</ul>
+
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
@@ -14721,6 +14748,18 @@ weighted avg       0.43      0.41      0.41       500
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<ul>
+<li>Best parameter<ul>
+<li>panalty: none</li>
+<li>solver: sag</li>
+</ul>
+</li>
+</ul>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
