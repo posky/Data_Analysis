@@ -14,4 +14,4 @@
     * IRIS EDA [html](https://posky.github.io/Data_Analysis/iris/IRIS_BASIC01.html)
     * IRIS 기본 모델 만들기 [html]()
     * IRIS 모델 평가 [html]()
-    * IRIS [Flask app](146.56.151.10:5000/iris/)
+    * IRIS [Flask app](http://146.56.151.10:5000/iris/)
